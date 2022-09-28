@@ -4,5 +4,6 @@ public class Main {
         SalesManager salesManager = new SalesManager(arr);
         int max = salesManager.max();
         System.out.println(max);
+        System.out.println(salesManager.getAverageSales());
     }
 }
