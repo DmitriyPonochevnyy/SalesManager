@@ -15,7 +15,7 @@ public class SalesManager {
         return max;
     }
     public int min() {
-        int min = Integer.MAX_VALUE;
+        int min = 100;
         for (int sale : sales) {
             if (sale < min) {
                 min = sale;
@@ -28,6 +28,6 @@ public class SalesManager {
         for (int sale : sales) {
             sum += sale;
         }
-return (sum-min() - max()) / (sales.length - 2);
+return (sum - min() - max()) / (sales.length - 2);
     }
 }
